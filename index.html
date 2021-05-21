@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html >
+<body  align="center" style="background-color:Yellow;">
+<head>
+  <meta charset="UTF-8">
+  <title>Ebuss Recommender</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>   
+    <style>
+      body {
+        font-family: 'Tangerine', serif;
+        font-size: 28px;
+      }
+    </style>
+
+</head>
+
+<body>
+ <div class="login">
+	<h1>EBUSS RECOMMENDER </h1>
+	<h3>Enter username to get top 5 product recommendation for you!</h3>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form align="center" action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="experience" placeholder="Username" required="required" />
+        <button align="center" type="submit" class="btn btn-primary btn-block btn-large">Recommend</button>
+    </form>
+
+   <br>
+   <br>
+   {{ recommended_products }}
+
+ </div>
+
+
+</body>
+</html>
