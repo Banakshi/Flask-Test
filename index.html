@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html >
-<body  align="center" style="background-color:Yellow;">
 <head>
   <meta charset="UTF-8">
   <title>Ebuss Recommender</title>
@@ -16,13 +15,12 @@
 
 <body>
  <div class="login">
-	<h1>EBUSS RECOMMENDER </h1>
-	<h3>Enter username to get top 5 product recommendation for you!</h3>
-
+	<h1>Enter username to get top 5 recommended products </h1>
+	 
      <!-- Main Input For Receiving Query to our ML -->
     <form align="center" action="{{ url_for('predict')}}"method="post">
     	<input type="text" name="experience" placeholder="Username" required="required" />
-        <button align="center" type="submit" class="btn btn-primary btn-block btn-large">Recommend</button>
+        <button align="center" type="submit" class="btn btn-primary btn-block btn-large">SUBMIT</button>
     </form>
 
    <br>
